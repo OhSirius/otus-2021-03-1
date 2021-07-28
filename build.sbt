@@ -4,7 +4,8 @@ lazy val root = project.in(file("."))
     version := "0.1.0-rc1",
     organization := "me.chuwy",
     scalaVersion := "2.13.4",
-    initialCommands := "import me.chuwy.otusfp._"
+    initialCommands := "import me.chuwy.otusfp._",
+    scalacOptions += "-deprecation",
   )
   .settings(BuildSettings.assemblySettings)
   .settings(BuildSettings.buildSettings)
